@@ -1,3 +1,43 @@
 #seccion1{
-    background-image: url("img/lap_darkbg.jpg");
+    /*background-image: url("img/portada1.jpg");*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("img/idea.jpg");
+
+    /* Set a specific height */
+    min-height: 700px;
+    max-height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
 }
+
+@media (max-width: 992px) /*< lg*/
+{
+    .justify-content-lg-around{justify-content: space-around;}
+    .w-fit{width: fit-content;}
+    .text-hardcenter{position: relative; left:50%;}
+    .w-lg-40{max-width:40% !important;}
+    .w-lg-logo{max-width: 50% !important;}
+    .w-lg-50{max-width:50% !important; height: auto!important;}
+    .w-lg-75{max-width:75% !important;}
+}
+
+@media (min-width: 992px) /* > lg*/
+{
+    .w-lg-5{max-width:5% !important;}
+    .img-servicios1{max-width: 340px; max-height:500px;}
+    .img-servicios2{max-width: 50% !important; align-self: center;}
+    .fs-lg-4{font-size: large;}
+}
+
+
+.heroImageTextDiv{height: 500px;}
+.w-10{max-width:10%;}
+.iconos{width:50px;}
+.fit-content{width:fit-content}
+.mylink{text-decoration: none; color:inherit}
+.mylink:hover{color:yellow;}
+.maxh-450px{max-height: 450px;}

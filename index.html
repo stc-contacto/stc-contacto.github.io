@@ -5,42 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STC</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
       
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a href="#" class="py-0 w-25"><img class="w-25"src="img/logo.jpg" alt=""></a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ps-4" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#Inicio" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Cursos" class="nav-link">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#AcercaDe" class="nav-link">¿Quienes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#IniciarSesion" class="nav-link">Cotizaciones</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <img src="img/redesSociales.jpg" alt="" class="img-fluid">
+    <!--
+            <img src="img/portada1.jpg" alt="" class="img-fluid">
+    -->
     <!--Imagen1 grande con promocion-->
     <section id="seccion1">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+            <div class="container flex-row-reverse flex-lg-row">
+                <a href="#" class="py-0 w-10 w-lg-5 bg-danger"><img class="img-fluid"src="img/logo.jpg" alt=""></a>
+                <button class="navbar-toggler mb-2 mb-lg-0" data-bs-toggle="collapse" data-bs-target="#navmenu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ps-4" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contacto" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotros.html" class="nav-link">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/profile.php?id=100088980348951&mibextid=ZbWKwL" class="nav-link">Cotizaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--
+        <h1 class="text-warning d-block text-center mt-3">
+            Soluciones Tecnológicas Rentables
+        </h1>
+        -->
+        <div class="px-4 d-flex flex-column heroImageTextDiv justify-content-center align-items-center text-light">
+            <h2 class="">
+                Consigue ya el sitio web que necesitas!
+            </h2>
+            <div class="d-flex mt-3">
+                <a href="#servicios2">
+                    <button type="button" class="btn btn-dark">Otros servicios</button>
+                </a>
+                <a class="mylink" href="https://www.facebook.com/profile.php?id=100088980348951&mibextid=ZbWKwL">
+                    <button type="button" class="btn btn-dark ms-3">Cotizar sitio</button>
+                </a>
+            </div>
+        </div>
+        <!--
+        <div class="text-warning text-center fs-2">
+            <span class="bg-black px-2">Soluciones Tecnológicas Confiables</span>
+        </div>
+        -->
+    </section>
+    <!--Servicios que ofrecemos-->
+    <section id="servicios">
+        <div class="container my-5 d-block d-lg-flex">
+            <div class="p-lg-5">
+                <h3>Diseño web</h3>
+                <p>En STC diseñamos sitios elegantes, optimizados para Google (SEO) y optimizados para celular,
+                    tablet, computadora y cualquier otro dispositivo.
+                </p>
+                <div class="d-none d-lg-block mt-5">
+                    <h4>
+                        ¿Desconoces como se administra un sitio web?
+                    </h4>
+                    <p>
+                        ¡No te preocupes! , en STC nos encargamos de todo, nosotros manejamos los servicios de hosting, administración y soporte del sitio
+                        además de que nos encargamos de la seguridad del mismo.
+                    </p>
+                </div>
+            </div>
+            <img src="img/web1.jpg" class="img-fluid img-servicios1" alt="...">
+        </div>
+    </section>
+    <section>
+        <div id="servicios2" class="container my-5 d-block d-lg-flex flex-lg-row-reverse">
+            <div class="p-lg-5">
+                <h3>Marketing Digital</h3>
+                <p>En STC te ayudamos a tener presencia en el mundo digital al asesorarte en el manejo 
+                    de redes sociales, publicidad, gestión de marca, entre otras cosas.
+                </p>
+                <div class="d-none d-lg-block mt-5">
+                    <h4>
+                        ¿No tienes logo para tu empresa?
+                    </h4>
+                    <p>
+                        ¡No te preocupes! , en STC hacemos el logo de tu negocio a un precio razonable.
+                    </p>
+                </div>
+            </div>
+            <img src="img/redesSociales.jpg" class="img-fluid img-servicios2" alt="...">
+        </div>
     </section>
     <!--Imagen1 grande con promocion contraste opuesto-->
     <!--pie de pagina-->
+    <div class="bg-black d-flex text-light justify-content-center align-items-center" style="height:300px">
+        <div id="contacto" class="d-flex flex-column fit-content">
+            <div class="fit-content">
+                <a class="mylink" href="https://www.facebook.com/profile.php?id=100088980348951&mibextid=ZbWKwL">
+                    <img src="img/facebook.svg" class="bg-light p-1 me-3 iconos" alt="">
+                Soluciones Tecnológicas Confiables
+                </a>
+            </div>
+            <div class="fit-content mt-3">
+                <img src="img/envelope.svg" class="bg-light p-1 me-3 iconos" alt="">
+                stc.contacto.slp@gmail.com
+            </div>
+        </div>
+    </div>
 </body>
 </html>
